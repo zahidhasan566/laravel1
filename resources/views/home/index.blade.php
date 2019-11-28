@@ -44,7 +44,7 @@
                 <li class="nav-item"><a href="../feedback/feedback" class="nav-link">Customer Fedback </a></li>
                 <li class="nav-item"><a href="../skill" class="nav-link">Services Skill </a></li>
                 <li class="nav-item"><a href="{{ route('sms.index', $user['userid']) }}" class="nav-link">Sms </a></li>
-                <li class="nav-item"><a href="../serviceprovider/appointment" class="nav-link">Appointment</a></li>
+                <li class="nav-item"><a href="{{ route('sappointment.index', $user['userid']) }}" class="nav-link">Appointment</a></li>
                 <li class="nav-item"><a href="../notice" class="nav-link">Notice</a></li>
                 <li class="nav-item"><a href="../logout" class="nav-link">logout</a></li>
             </ul>

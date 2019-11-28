@@ -28,3 +28,7 @@ Route::get('/profile/delete/{id}', 'ProfileController@delete')->name('profile.de
 
 Route::get('/Sms/{id}', 'SmsController@sms')->name('sms.index');
 Route::post('/Sms/{id}', 'SmsController@reply');
+
+Route::get('/Sappointment/{id}', 'SappointmentController@index')->name('sappointment.index');
+Route::post('/Sappointment/accept/{id}', 'SappointmentController@accept')->name('saccept.index');
+Route::post('/Sappointment/reject/{id}', 'SappointmentController@reject')->name('sreject.index');
