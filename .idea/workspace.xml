@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="030df5ad-21e7-4abd-b963-f2e8a42116a7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/SappointmentController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/SappointmentController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/home/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/sms/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/sms/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
@@ -148,7 +148,8 @@
       <workItem from="1574833153157" duration="6168000" />
       <workItem from="1574875293567" duration="23705000" />
       <workItem from="1574933118316" duration="9685000" />
-      <workItem from="1574956156895" duration="18315000" />
+      <workItem from="1574956156895" duration="19701000" />
+      <workItem from="1575028164169" duration="3638000" />
     </task>
     <servers />
   </component>
@@ -160,7 +161,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

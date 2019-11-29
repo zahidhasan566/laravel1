@@ -58,12 +58,10 @@ class SappointmentController extends Controller
             ->where('request',0)
             ->get();
 
-      // if($sapp2[0]->delete()){
+
             $deletedRows = $sapp2[0]::where('request', '0')->delete();
             return redirect()->route('home.index',$id);
-        //}else{
-            return redirect()->route('sappointment.index',$id);
-        //}
+
 
     }
 

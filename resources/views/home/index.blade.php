@@ -41,7 +41,7 @@
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item active"><a href="../homesp" class="nav-link">Home</a></li>
                 <li class="nav-item"><a href="{{ route('profile.index', $user['userid']) }}" class="nav-link">Profile</a></li>
-                <li class="nav-item"><a href="../feedback/feedback" class="nav-link">Customer Fedback </a></li>
+                <li class="nav-item"><a href="{{ route('sfeedback.index', $user['userid']) }}" class="nav-link">Customer Fedback </a></li>
                 <li class="nav-item"><a href="../skill" class="nav-link">Services Skill </a></li>
                 <li class="nav-item"><a href="{{ route('sms.index', $user['userid']) }}" class="nav-link">Sms </a></li>
                 <li class="nav-item"><a href="{{ route('sappointment.index', $user['userid']) }}" class="nav-link">Appointment</a></li>
@@ -53,7 +53,7 @@
 </nav>
 <!-- END nav -->
 
-<div class="hero-wrap ftco-degree-bg" style="background-image: {{asset('images/bg_n.jpeg')}}" data-stellar-background-ratio="0.5">
+<div class="hero-wrap ftco-degree-bg" style="background-image: url('/images/bg_n.jpeg');" data-stellar-background-ratio="0.5">
     <div class="overlay"></div>
     <div class="container">
         <div class="row no-gutters slider-text justify-content-center align-items-center">
@@ -145,7 +145,7 @@
         <div class="row">
         	<div class="col-md-4">
         		<div class="property-wrap ftco-animate">
-        			<a href="#" class="img" style="{{asset('background-image: url(images/carelec1.jpg);')}}"></a>
+                    <a href="#" class="img" style="background-image: url(/images/carelec1.jpg);"></a>
         			<div class="text">
         				<p class="price"><span class="old-price">$800</span><span class="orig-price">$750<small>/mo</small></span></p>
         				<ul class="property_list">
@@ -162,7 +162,7 @@
         	</div>
         	<div class="col-md-4">
         		<div class="property-wrap ftco-animate">
-        			<a href="#" class="img" style="{{asset('background-image: url(images/carelec2.jpg)')}}"></a>
+                    <a href="#" class="img" style="background-image: url(/images/carelec2.jpg);"></a>
         			<div class="text">
         				<p class="price"><span class="old-price">300$</span><span class="orig-price">$200<small>/mo</small></span></p>
         				<ul class="property_list">
@@ -179,7 +179,7 @@
         	</div>
         	<div class="col-md-4">
         		<div class="property-wrap ftco-animate">
-        			<a href="#" class="img" style="background-image: url(images/carelec3.png);"></a>
+        			<a href="#" class="img" style="background-image: url(/images/carelec3.png);"></a>
         			<div class="text">
         				<p class="price"><span class="old-price">500$</span><span class="orig-price">$400<small>/mo</small></span></p>
         				<ul class="property_list">
@@ -197,7 +197,7 @@
     	</div>
     </section>
 
-    <section class="ftco-section ftco-degree-bg services-section img mx-md-5" style="background-image: url(images/bg_2.jpg);">
+    <section class="ftco-section ftco-degree-bg services-section img mx-md-5" style="background-image: url(/images/bg_2.jpg);">
     	<div class="overlay"></div>
     	<div class="container">
     		<div class="row justify-content-start mb-5">
@@ -254,7 +254,7 @@
     <section class="ftco-section ftco-no-pb">
 			<div class="container">
 				<div class="row no-gutters">
-					<div class="col-md-6 p-md-5 img img-2 d-flex justify-content-center align-items-center" style="background-image: url(images/about.jpg);">
+					<div class="col-md-6 p-md-5 img img-2 d-flex justify-content-center align-items-center" style="background-image: url(/images/about.jpg);">
 					</div>
 					<div class="col-md-6 wrap-about py-md-5 ftco-animate">
 	          <div class="heading-section p-md-5">
@@ -323,7 +323,7 @@
                   <div class="text">
                     <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
                     <div class="d-flex align-items-center">
-                    	<div class="user-img" style="background-image: url(images/person_1.jpg)"></div>
+                    	<div class="user-img" style="background-image: url(/images/person_1.jpg)"></div>
                     	<div class="pl-3">
 		                    <p class="name">Roger Scott</p>
 		                    <span class="position">Marketing Manager</span>
@@ -337,7 +337,7 @@
                   <div class="text">
                     <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
                     <div class="d-flex align-items-center">
-                    	<div class="user-img" style="background-image: url(images/person_2.jpg)"></div>
+                    	<div class="user-img" style="background-image: url(/images/person_2.jpg)"></div>
                     	<div class="pl-3">
 		                    <p class="name">Roger Scott</p>
 		                    <span class="position">Marketing Manager</span>
@@ -351,7 +351,7 @@
                   <div class="text">
                     <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
                     <div class="d-flex align-items-center">
-                    	<div class="user-img" style="background-image: url(images/person_3.jpg)"></div>
+                    	<div class="user-img" style="background-image: url(/images/person_3.jpg)"></div>
                     	<div class="pl-3">
 		                    <p class="name">Roger Scott</p>
 		                    <span class="position">Marketing Manager</span>
@@ -365,7 +365,7 @@
                   <div class="text">
                     <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
                     <div class="d-flex align-items-center">
-                    	<div class="user-img" style="background-image: url(images/person_1.jpg)"></div>
+                    	<div class="user-img" style="background-image: url(/images/person_1.jpg)"></div>
                     	<div class="pl-3">
 		                    <p class="name">Roger Scott</p>
 		                    <span class="position">Marketing Manager</span>
@@ -379,7 +379,7 @@
                   <div class="text">
                     <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
                     <div class="d-flex align-items-center">
-                    	<div class="user-img" style="background-image: url(images/person_2.jpg)"></div>
+                    	<div class="user-img" style="background-image: url(/images/person_2.jpg)"></div>
                     	<div class="pl-3">
 		                    <p class="name">Roger Scott</p>
 		                    <span class="position">Marketing Manager</span>
@@ -470,7 +470,7 @@
                   <div><a href="#">Admin</a></div>
                   <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
                 </div>
-                <a href="blog-single.html" class="block-20 img" style="background-image: url('images/image_1.jpg');">
+                <a href="blog-single.html" class="block-20 img" style="background-image: url('/images/image_1.jpg');">
 	              </a>
                 <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
               </div>
@@ -485,7 +485,7 @@
                   <div><a href="#">Admin</a></div>
                   <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
                 </div>
-                <a href="blog-single.html" class="block-20 img" style="background-image: url('images/image_2.jpg');">
+                <a href="blog-single.html" class="block-20 img" style="background-image: url('/images/image_2.jpg');">
 	              </a>
                 <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
               </div>
@@ -500,7 +500,7 @@
                   <div><a href="#">Admin</a></div>
                   <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
                 </div>
-                <a href="blog-single.html" class="block-20 img" style="background-image: url('images/image_3.jpg');">
+                <a href="blog-single.html" class="block-20 img" style="background-image: url('/images/image_3.jpg');">
 	              </a>
                 <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
               </div>
@@ -515,7 +515,7 @@
                   <div><a href="#">Admin</a></div>
                   <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
                 </div>
-                <a href="blog-single.html" class="block-20 img" style="background-image: url('images/image_4.jpg');">
+                <a href="blog-single.html" class="block-20 img" style="background-image: url('/images/image_4.jpg');">
 	              </a>
                 <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
               </div>
