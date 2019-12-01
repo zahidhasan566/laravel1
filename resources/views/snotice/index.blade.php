@@ -15,7 +15,7 @@
                     <div class="col-md-3 register-left">
                         <img src="https://image.ibb.co/n7oTvU/logo_white.png" alt=""/>
                         <h3>Welcome</h3>
-                        <p> Register up your service here!</p>
+                        <p> Notice From Admin !</p>
 
                     </div>
                     <div class="col-md-9 register-right">
@@ -28,34 +28,19 @@
                          <form method="post">
                         <div class="tab-content" id="myTabContent">
                             <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                                <h3 class="register-heading">Service Details </h3>
+                                <h3 class="register-heading">NOTICE !!!!!!</h3>
                                 <div class="row register-form">
                                     <div class="col-md-6">
-                                        <div class="form-group">
-                                           SPID :  <input type="text" class="form-control" placeholder="{{$service['spid']}}"*"name="spid"></td>
-                                        </div>
-                                         <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="{{$service['servicename']}}*"  name="sname" />
-                                        </div>
 
                                         <div class="form-group">
-                                            <input type="text" value="{{$service['price']}}" name="price" />
-                                        </div>
-                                        <div class="form-group">
-                                            <input type="text" value="{{$service['description']}}" name="des" />
+                                            <input type="text" class="form-control" placeholder="{{$snotice['warning']}}*"  name="warning" />
                                         </div>
 
                                     <div class="col-md-6">
                                         <div class="form-group">
 
 
-                                        <input type="submit" class="btnRegister"  value="UPDATE "/>
-                                            <div >
-
-
-                                               </td> <a href="{{ route('home.index', $user['userid']) }}" class="nav-link">Back </a>
-
-                                            </div>
+                                            <a href="{{ route('home.index', $user['userid']) }}" class="nav-link">Back </a>
 
                                     </div>
                                 </div>

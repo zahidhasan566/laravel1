@@ -56,7 +56,7 @@
                                     <div class="form-group">
 
 
-                                        <a href="../homesp" class="nav-link">Back </a>
+                                        <a href="{{ route('home.index', $user['userid']) }}" class="nav-link">Back </a>
 
                                     </div>
                                 </div>

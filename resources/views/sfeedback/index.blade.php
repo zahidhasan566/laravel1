@@ -37,14 +37,14 @@
 
         <div class="collapse navbar-collapse" id="ftco-nav">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item active"><a href="../homesp" class="nav-link">Home</a></li>
+                <li class="nav-item active"><a href="{{ route('home.index', $user['userid']) }}" class="nav-link">Home</a></li>
                 <li class="nav-item"><a href="{{ route('profile.index', $user['userid']) }}" class="nav-link">Profile</a></li>
                 <li class="nav-item"><a href="{{ route('sfeedback.index', $user['userid']) }}" class="nav-link">Customer Fedback </a></li>
                 <li class="nav-item"><a href="{{ route('Service.show', $user['userid']) }}"class="nav-link">Services Skill </a></li>
                 <li class="nav-item"><a href="{{ route('sms.index', $user['userid']) }}" class="nav-link">Sms </a></li>
                 <li class="nav-item"><a href="{{ route('sappointment.index', $user['userid']) }}" class="nav-link">Appointment</a></li>
-                <li class="nav-item"><a href="../notice" class="nav-link">Notice</a></li>
-                <li class="nav-item"><a href="{{ route('logout.index)'}}" class="nav-link">logout</a></li>
+                <li class="nav-item"><a href="{{ route('Snotice.show', $user['userid']) }}" class="nav-link">Notice</a></li>
+                <li class="nav-item"><a href="{{ route('logout.index')}}" class="nav-link">logout</a></li>
             </ul>
         </div>
     </div>

@@ -30,6 +30,8 @@ Route::group(['middleware'=>['sess']], function() {
     Route::get('/Sms/{id}', 'SmsController@sms')->name('sms.index');
     Route::post('/Sms/{id}', 'SmsController@reply');
 
+    Route::get('/Sms/{id}', 'SmsController@sms')->name('sms.index');
+
     Route::get('/Sappointment/{id}', 'SappointmentController@index')->name('sappointment.index');
     Route::post('/Sappointment/accept/{id}', 'SappointmentController@accept')->name('saccept.index');
     Route::post('/Sappointment/reject/{id}', 'SappointmentController@reject')->name('sreject.index');
@@ -39,4 +41,7 @@ Route::group(['middleware'=>['sess']], function() {
     Route::resource('/Service', 'ServiceController');
     Route::put('Service/{id}', 'ServiceController@show')->name('Service.show');
     Route::post('Service/{id}', 'ServiceController@update')->name('Service.update');
+
+    Route::resource('/Snotice', 'SnoticeController');
+    Route::put('Snotice/{id}', 'SnoticeController@show')->name('Snotice.show');
 });

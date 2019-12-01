@@ -62,7 +62,7 @@
 
 
                                             <a href="{{ route('profile.delete', $user['userid']) }}" class="nav-link">Delete </a>
-                                            <a href="{{ route('profile.index', $user['userid']) }}" class="nav-link">Back </a>
+                                            <a href="{{ route('home.index', $user['userid']) }}" class="nav-link">Back </a>
 
                                         </div>
                                 </div>

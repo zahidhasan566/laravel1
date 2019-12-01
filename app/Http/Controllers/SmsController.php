@@ -13,8 +13,22 @@ class SmsController extends Controller
         $user = User::find($id);
         $receiverid=$id;
         $sms = Sms::find($receiverid);
-       return view('sms.index')->with('user', $user)->with('sms',$sms);
+
+
+        $sms = Sms::where('receiverid',  $receiverid)
+            ->get();
+        if(count($sms)>0)
+        {
+
+            return view('sms.index')->with('user', $user)->with('sms', $sms[0]);
+        }
+
+        else {
+            echo("no message request for u");
+        }
+
     }
+
     function reply(Request $request,$id){
 
         $user = User::find($id);
