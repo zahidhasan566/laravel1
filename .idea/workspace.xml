@@ -3,7 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="030df5ad-21e7-4abd-b963-f2e8a42116a7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/LogoutController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/LogoutController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/home/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/login/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/login/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/sfeedback/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/sfeedback/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/sms/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/sms/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
@@ -150,7 +153,8 @@
       <workItem from="1574933118316" duration="9685000" />
       <workItem from="1574956156895" duration="19701000" />
       <workItem from="1575028164169" duration="4393000" />
-      <workItem from="1575200020693" duration="7275000" />
+      <workItem from="1575200020693" duration="7786000" />
+      <workItem from="1575220087869" duration="3048000" />
     </task>
     <servers />
   </component>
