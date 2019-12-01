@@ -34,3 +34,7 @@ Route::post('/Sappointment/accept/{id}', 'SappointmentController@accept')->name(
 Route::post('/Sappointment/reject/{id}', 'SappointmentController@reject')->name('sreject.index');
 
 Route::get('/Sfeedback/{id}', 'SfeedbackController@index')->name('sfeedback.index');
+
+Route::resource('/Service', 'ServiceController');
+Route::put('Service/{id}', 'ServiceController@show')->name('Service.show');
+Route::post('Service/{id}', 'ServiceController@update')->name('Service.update');

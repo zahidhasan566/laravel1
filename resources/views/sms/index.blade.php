@@ -42,7 +42,7 @@
                 <li class="nav-item active"><a href="../homesp" class="nav-link">Home</a></li>
                 <li class="nav-item"><a href="{{ route('profile.index', $user['userid']) }}" class="nav-link">Profile</a></li>
                 <li class="nav-item"><a href="{{ route('sfeedback.index', $user['userid']) }}" class="nav-link">Customer Fedback </a></li>
-                <li class="nav-item"><a href="../skill" class="nav-link">Services Skill </a></li>
+                <li class="nav-item"><a href="{{ route('Service.show', $user['userid']) }}"class="nav-link">Services Skill </a></li>
                 <li class="nav-item"><a href="{{ route('sms.index', $user['userid']) }}" class="nav-link">Sms </a></li>
                 <li class="nav-item"><a href="{{ route('sappointment.index', $user['userid']) }}" class="nav-link">Appointment</a></li>
                 <li class="nav-item"><a href="../notice" class="nav-link">Notice</a></li>
