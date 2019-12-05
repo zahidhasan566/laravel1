@@ -3,14 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="030df5ad-21e7-4abd-b963-f2e8a42116a7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/SmsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/SmsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/profile/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/profile/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/sappointment/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/sappointment/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/service/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/service/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/sfeedback/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/sfeedback/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/sms/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/sms/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/LoginController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/login/index.php" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -155,7 +149,10 @@
       <workItem from="1574956156895" duration="19701000" />
       <workItem from="1575028164169" duration="4393000" />
       <workItem from="1575200020693" duration="7786000" />
-      <workItem from="1575220087869" duration="7477000" />
+      <workItem from="1575220087869" duration="8076000" />
+      <workItem from="1575300974881" duration="304000" />
+      <workItem from="1575534652028" duration="5192000" />
+      <workItem from="1575540932009" duration="936000" />
     </task>
     <servers />
   </component>

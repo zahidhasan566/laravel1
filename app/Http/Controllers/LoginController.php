@@ -3,7 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Http\Requests\SpRequest;
 use App\User;
+use Validator;
 //use Illuminate\Support\Facades\DB;
 
 class LoginController extends Controller
@@ -14,6 +16,11 @@ class LoginController extends Controller
     }
 
     function verify(Request $request){
+
+        $request->validate([
+            'username'=>'required',
+            'password'=>'required'
+        ]);
 
         $users = User::all();
 

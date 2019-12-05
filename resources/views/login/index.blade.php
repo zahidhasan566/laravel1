@@ -6,25 +6,31 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title> Login </title>
 
-<link rel="stylesheet" href="css/bootstrap.min.css">
-<script src="js/jquery.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<link rel="stylesheet" type="text/css" href="css/login.css">
+<link rel="stylesheet" href="{{asset('css/bootstrap.min.css')}}">
+<script src="{{asset('js/jquery.min.js')}}"></script>
+<script src="{{asset('js/bootstrap.min.js')}}"></script>
+<link rel="stylesheet" type="text/css" href="{{asset('css/login.css')}}">
 </head>
 <body>
 <div class="login-form">
     <form method="post" >
+
   <div class="avatar"><i class="material-icons">&#xE7FF;</i></div>
       <h4 class="modal-title">Login to Your Account</h4>
     <table>
       <tr>
         <td>Username</td>
         <td><input type="text" class="form-control" name="username"></td>
+          <td> {{$errors->first('username')}}</td>
+
       </tr>
       <tr>
         <td>Password</td>
         <td><input type="password" class="form-control" name="password"></td>
+          <td> {{$errors->first('password')}}</td>
       </tr>
+
+
 
 
     </table>
