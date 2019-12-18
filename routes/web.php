@@ -14,10 +14,13 @@
 Route::get('/', function(){
 	return view('welcome');
 });
-
+Route::get('/register', 'RegisterController@index')->name('reg.index');
+Route::post('/register/servicereg', 'RegisterController@store');
 Route::get('/login', 'LoginController@index')->name('login.index');
 Route::post('/login', 'LoginController@verify');
 Route::get('/logout', 'LogoutController@index')->name('logout.index');
+
+
 Route::group(['middleware'=>['sess']], function() {
     Route::get('/home/{id}', 'HomeController@index')->name('home.index');
     Route::get('/logout', 'LogoutController@index')->name('logout.index');

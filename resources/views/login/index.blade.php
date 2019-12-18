@@ -42,7 +42,7 @@
         <input type="submit" class="btn btn-primary btn-block btn-lg"  name="submit" value="Login">
 
   </form>
-    <div class="text-center small">Don't have an account? <a href="../register">Sign up</a></div>
+    <div class="text-center small">Don't have an account? <a href="{{route('reg.index')}}">Sign up</a></div>
 </div>
 </body>
 </html>
