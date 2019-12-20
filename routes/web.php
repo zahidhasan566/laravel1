@@ -47,4 +47,7 @@ Route::group(['middleware'=>['sess']], function() {
 
     Route::resource('/Snotice', 'SnoticeController');
     Route::put('Snotice/{id}', 'SnoticeController@show')->name('Snotice.show');
+
+    Route::get('/live_search', 'LiveSearch@index')->name('livesearch.index');;
+    Route::get('/live_search/action', 'LiveSearch@action')->name('live_search.action');
 });

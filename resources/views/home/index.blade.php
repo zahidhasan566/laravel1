@@ -46,6 +46,7 @@
                 <li class="nav-item"><a href="{{ route('sms.index', $user['userid']) }}" class="nav-link">Sms </a></li>
                 <li class="nav-item"><a href="{{ route('sappointment.index', $user['userid']) }}" class="nav-link">Appointment</a></li>
                 <li class="nav-item"><a href="{{ route('Snotice.show', $user['userid']) }}" class="nav-link">Notice</a></li>
+                <li class="nav-item"><a href="{{ route('livesearch.index') }}" class="nav-link">Offer</a></li>
                 <li class="nav-item"><a href="{{ route('logout.index')}}" class="nav-link">logout</a></li>
             </ul>
         </div>
