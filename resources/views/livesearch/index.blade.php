@@ -20,8 +20,9 @@
                 <table class="table table-striped table-bordered">
                     <thead>
                     <tr>
-                        <th>Offer Name</th>
-                        <th>Offer code </th>
+                        <th>Customer Name</th>
+                        <th>city </th>
+                        <th>gender </th>
 
                     </tr>
                     </thead>
@@ -39,6 +40,7 @@
 <script>
     $(document).ready(function(){
 
+
         fetch_customer_data();
 
         function fetch_customer_data(query = '')
@@ -50,6 +52,9 @@
                 dataType:'json',
                 success:function(data)
                 {
+                    //var parsed_data = $.parseJSON(data);
+                  //  $('#divusername').html(parsed_data.id);
+
                     $('tbody').html(data.table_data);
                     $('#total_records').text(data.total_data);
                 }
