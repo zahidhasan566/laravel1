@@ -59,7 +59,7 @@
         <div class="row no-gutters slider-text justify-content-center align-items-center">
 
             <div class="text text-center">
-                <h1 class="mb-4" color="blue"> <br> REVIEW YOURSELF  </h1>
+                <h1 class="mb-4" color="blue"> <br> TRANSITION HISTORY   </h1>
 
             </div>
 
@@ -77,7 +77,7 @@
         <div class="row justify-content-center">
             <div class="col-md-12 heading-section text-center ftco-animate mb-5">
                 <span class="subheading"></span>
-                <h2 class="mb-2">Feedbacks </h2>
+                <h2 class="mb-2">TRANSITION  </h2>
             </div>
         </div>
     </div>
@@ -99,18 +99,18 @@
 
 
                 <th> <div class="col-sm-3 col-md-2 col-5">
-                        <label style="font-weight:bold;">Feedback</label>
+                        <label style="font-weight:bold;">Transition amount </label>
                     </div>
                 </th>
 
 
             </tr>
             <hr />
-            @foreach($sfeedback as $sfeedback)
+            @foreach($stransition as $stransition)
                 <tr>
 
-                    <td>{{ $sfeedback->sender }}</td>
-                    <td>{{ $sfeedback->feedback }}</td>
+                    <td>{{ $stransition->cid }}</td>
+                    <td>{{ $stransition->provideramount }}</td>
                 </tr>
 
             @endforeach

@@ -41,6 +41,8 @@ Route::group(['middleware'=>['sess']], function() {
 
     Route::get('/Sfeedback/{id}', 'SfeedbackController@index')->name('sfeedback.index');
 
+    Route::get('/Stransition/{id}', 'StransitionController@index')->name('stransition.index');
+
     Route::resource('/Service', 'ServiceController');
     Route::put('Service/{id}', 'ServiceController@show')->name('Service.show');
     Route::post('Service/{id}', 'ServiceController@update')->name('Service.update');

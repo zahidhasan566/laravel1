@@ -9,6 +9,8 @@ class LiveSearch extends Controller
 {
     function index()
     {
+        //echo ($id);
+        //return view('livesearch.index')->with($id);
         return view('livesearch.index');
     }
 
@@ -20,16 +22,16 @@ class LiveSearch extends Controller
             $query = $request->get('query');
             if($query != '')
             {
-                $data = DB::table('offer')
-                    ->where('offername', 'like', '%'.$query.'%')
-                    ->orWhere('offercode', 'like', '%'.$query.'%')
+                $data = DB::table('user')
+                    ->where('type', 2)
+                    ->where('username', 'like', '%'.$query.'%')
                     ->get();
 
             }
             else
             {
-                $data = DB::table('offer')
-                    ->orderBy('offerid', 'desc')
+                $data = DB::table('user')
+                    ->where('type', 2)
                     ->get();
             }
             $total_row = $data->count();
@@ -39,8 +41,9 @@ class LiveSearch extends Controller
                 {
                     $output .= '
         <tr>
-         <td>'.$row->offername.'</td>
-         <td>'.$row->offercode.'</td>
+         <td>'.$row->username.'</td>
+         <td>'.$row->city.'</td>
+         <td>'.$row->gender.'</td>
 
         </tr>
         ';
