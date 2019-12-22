@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\User;
+use Illuminate\Support\Facades\DB;
 use App\Stransition;
 
 class StransitionController extends Controller
@@ -13,10 +14,13 @@ class StransitionController extends Controller
         $user = User::find($id);
         $receiver=$id;
 
+        $stransition =DB::table('account')
+         ->join('user','account.cid','=','user.userid')
+         ->select('account.*','user.username')
+         ->get();
 
-
-        $stransition = Stransition::where('serviceid',  $receiver)
-                     ->get();
+        //$stransition = Stransition::where('serviceid',  $receiver)
+                     //->get();
 
 
 

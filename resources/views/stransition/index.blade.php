@@ -91,7 +91,7 @@
             <tr>
 
                 <th><div class="col-sm-3 col-md-2 col-5">
-                        <label style="font-weight:bold;">CustomerId</label>
+                        <label style="font-weight:bold;">CUSTOMER ID </label>
                     </div> </th>
 
 
@@ -99,7 +99,12 @@
 
 
                 <th> <div class="col-sm-3 col-md-2 col-5">
-                        <label style="font-weight:bold;">Transition amount </label>
+                        <label style="font-weight:bold;">CUSTOMER NAME </label>
+                    </div>
+                </th>
+
+                <th> <div class="col-sm-3 col-md-2 col-5">
+                        <label style="font-weight:bold;">TRANSITION AMOUNT </label>
                     </div>
                 </th>
 
@@ -110,6 +115,7 @@
                 <tr>
 
                     <td>{{ $stransition->cid }}</td>
+                    <td>{{ $stransition->username }}</td>
                     <td>{{ $stransition->provideramount }}</td>
                 </tr>
 
